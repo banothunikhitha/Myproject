@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages Page</title>
+  <link rel="stylesheet" href="messages.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <input type="text" id="message-search" placeholder="Search messages...">
+      <button onclick="searchMessages()">Search</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+    <h2>Messages</h2>
+    <ul id="message-list">
+      <li class="message">
+        <span class="username">System:</span> Welcome to the Channel....
+      </li>
+    </ul>
+    <div class="new-message-form">
+      <input type="text" id="new-message" placeholder="Type your message">
+      <button onclick="sendMessage()">Send Message</button>
+    </div>
+    <div>
+      <p><b>Note:</b> Please use the below messages for testing: [hi, help, thank you, bye, how are you]</p>
+    </div>
+  </div>
+  <script src="messages.js"></script>
+</body>
+</html>

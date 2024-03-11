@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Channels</title>
+    <link rel="stylesheet" href="channels.css">
+</head>
+<body>
+    <div class="top-bar">
+        <input type="text" id="channel-search" placeholder="Search channels...">
+        <button onclick="searchChannels()">Search</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <h2>Channels</h2>
+    <div id="channelsList">
+        <div>
+            General: General discussion
+        </div>
+        <div>
+            <strong>Announcements</strong>: Important announcements
+        </div>
+        <div>
+            <strong>Development</strong>: Discussion about development topics
+        </div>
+    </div>
+    <h2>Create New Channel</h2>
+    <form id="createChannelForm">
+        <div>
+            <label for="channelName">Channel Name:</label>
+            <input type="text" id="channelName" name="channelName" required>
+        </div>
+        <div>
+            <label for="channelDescription">Channel Description:</label>
+            <input type="text" id="channelDescription" name="channelDescription" required>
+        </div>
+        <button type="submit">Create Channel</button>
+    </form>
+    <script src="channels.js"></script>
+</body>
+</html>
